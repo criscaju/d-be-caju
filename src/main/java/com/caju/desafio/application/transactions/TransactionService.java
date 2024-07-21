@@ -20,7 +20,7 @@ import java.util.logging.Logger;
 
 @Service
 public class TransactionService {
-    static final Logger LOGGER = Logger.getLogger(TransactionService.class.getName());
+    private static final Logger LOGGER = Logger.getLogger(TransactionService.class.getName());
 
     private final IAccountRepository accountRepository;
     private final ITransactionRepository transactionRepository;

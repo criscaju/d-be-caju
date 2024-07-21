@@ -1,4 +1,4 @@
-package com.caju.desafio.transactions;
+package com.caju.desafio.transactions.unit;
 
 import com.caju.desafio.application.transactions.CreateTransactionRequest;
 import com.caju.desafio.application.transactions.TransactionService;
@@ -194,7 +194,7 @@ public class TransactionServiceTest {
     @Test
     public void givenNonExistentAccountId_ShouldReturn_AccountNotFoundFailure() {
         //Given
-        CreateTransactionRequest request = new CreateTransactionRequest(UUID.fromString("51c3d21f-21bf-49a4-8746-3d508b013db9"),
+        CreateTransactionRequest request = new CreateTransactionRequest(UUID.fromString("8a8a0ff2-a216-4b17-a752-7f3272dd016b"),
                 10d,
                 "6000",
                 "UBER TRIP                   SAO PAULO BR");
