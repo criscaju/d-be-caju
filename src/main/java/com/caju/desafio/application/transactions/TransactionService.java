@@ -94,8 +94,6 @@ public class TransactionService {
             }
         }
 
-        //L4 - Deal with race condition
-
         LOGGER.log(Level.INFO, String.format("There are no funds for transaction %s", transaction.getId().value()));
         return Result.failure(AccountErrors.INSUFFICIENT_FUNDS);
     }
